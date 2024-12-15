@@ -1,0 +1,72 @@
+{
+  "name" : "SAPO",
+  "icons" : [ {
+    "src" : "//assets.web.sapo.io/sapologos/touchicon/sapo.pt/touch-icon-192.png",
+    "sizes" : "192x192",
+    "type" : "image/png"
+  }, {
+    "src" : "//assets.web.sapo.io/sapologos/touchicon/sapo.pt/touch-icon-512.png",
+    "sizes" : "512x512",
+    "type" : "image/png"
+  } ],
+  "shortcuts" : [ {
+    "name" : "Início",
+    "description" : "Início",
+    "url" : "/",
+    "shortName" : "Início"
+  }, {
+    "name" : "Atualidade",
+    "description" : "Atualidade",
+    "url" : "/noticias/atualidade",
+    "shortName" : "Atualidade"
+  }, {
+    "name" : "Desporto",
+    "description" : "Desporto",
+    "url" : "/noticias/desporto",
+    "shortName" : "Desporto"
+  }, {
+    "name" : "Economia",
+    "description" : "Economia",
+    "url" : "/noticias/economia",
+    "shortName" : "Economia"
+  }, {
+    "name" : "Entretenimento",
+    "description" : "Entretenimento",
+    "url" : "/noticias/entretenimento",
+    "shortName" : "Entretenimento"
+  }, {
+    "name" : "Viagens",
+    "description" : "Viagens",
+    "url" : "/noticias/viagens",
+    "shortName" : "Viagens"
+  }, {
+    "name" : "Lifestyle",
+    "description" : "Lifestyle",
+    "url" : "/noticias/lifestyle",
+    "shortName" : "Lifestyle"
+  }, {
+    "name" : "Fama",
+    "description" : "Fama",
+    "url" : "/noticias/fama",
+    "shortName" : "Fama"
+  }, {
+    "name" : "Tecnologia",
+    "description" : "Tecnologia",
+    "url" : "/noticias/tecnologia",
+    "shortName" : "Tecnologia"
+  }, {
+    "name" : "Planeta",
+    "description" : "Planeta",
+    "url" : "/noticias/planeta",
+    "shortName" : "Planeta"
+  }, {
+    "name" : "Regiões",
+    "description" : "Regiões",
+    "url" : "/noticias/regioes",
+    "shortName" : "Regiões"
+  } ],
+  "display" : "fullscreen",
+  "start_url" : "/",
+  "short_name" : "SAPO",
+  "theme_color" : "#69A618"
+}

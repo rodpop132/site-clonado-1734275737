@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-PT" check-mobile ng-class="$root.activeOverlay == true ? 'active-overlay' : ''">
+
+<head>
+    <script type="text/javascript">
+        window.location.href = window.location.hostname.indexOf('staging') <= 0 ? 'https://www.sapo.pt/tempo' : 'https://homepage.staging.sapo.pt/tempo';;
+      </script>
+    <meta charset="utf-8">
+    <title ng-bind-template="SAPO Tempo - {{$root.currentLocation}}">SAPO Tempo - Previsões Meteorológicas</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1,MSIE 10.0">
+    <meta name="description" content="Previsões meteorológicas SAPO">
+    <meta name="author" content="Sapo">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1,target-densitydpi=device-dpi, user-scalable=0, shrink-to-fit=no"
+    />
+
+    <base href="/">
+
+    <meta property="og:title" content="Sapo Tempo" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Previsões meteorológicas SAPO" />
+    <meta property="og:image" content="https://tempo.sapo.pt/assets/images/colored-cities/lisboa.jpg" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="600" />
+    <meta name="twitter:image" content="https://tempo.sapo.pt/assets/images/colored-cities/lisboa.jpg" />
+    <!-- load Ink's CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.ink.sapo.pt/3.1.10/css/ink-flex.min.css">
+
+    <link rel="manifest" href="/manifest.json">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="SAPO Tempo">
+    <meta name="apple-mobile-web-app-title" content="SAPO Tempo">
+    <meta name="theme-color" content="#3B630E">
+    <meta name="msapplication-navbutton-color" content="#3B630E">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-starturl" content="/">
+    <link rel="apple-touch-startup-image" href="//assets.web.sapo.io/sapologos/touchicon/tempo.sapo.pt/touch-icon-192.png">
+
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the  root directory -->
+    <link rel="shortcut icon" type="image/png" href="//imgs.sapo.pt/sapologos/favicon/tempo.sapo.pt/favicon.ico" />
+
+    <link rel="icon" sizes="60x60" href="//assets.web.sapo.io/sapologos/touchicon/tempo.sapo.pt/touch-icon-60.png">
+    <link rel="icon" sizes="76x76" href="//assets.web.sapo.io/sapologos/touchicon/tempo.sapo.pt/touch-icon-76.png">
+    <link rel="icon" sizes="120x120" href="//assets.web.sapo.io/sapologos/touchicon/tempo.sapo.pt/touch-icon-120.png">
+    <link rel="icon" sizes="128x128" href="//assets.web.sapo.io/sapologos/touchicon/tempo.sapo.pt/touch-icon-128.png">
+    <link rel="icon" sizes="152x152" href="//assets.web.sapo.io/sapologos/touchicon/tempo.sapo.pt/touch-icon-152.png">
+    <link rel="icon" sizes="192x192" href="//assets.web.sapo.io/sapologos/touchicon/tempo.sapo.pt/touch-icon-192.png">
+
+    <link rel="apple-touch-icon" href="//assets.web.sapo.io/sapologos/touchicon/tempo.sapo.pt/touch-icon-60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="//assets.web.sapo.io/sapologos/touchicon/tempo.sapo.pt/touch-icon-76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="//assets.web.sapo.io/sapologos/touchicon/tempo.sapo.pt/touch-icon-120.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="//assets.web.sapo.io/sapologos/touchicon/tempo.sapo.pt/touch-icon-128.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="//assets.web.sapo.io/sapologos/touchicon/tempo.sapo.pt/touch-icon-152.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="//assets.web.sapo.io/sapologos/touchicon/tempo.sapo.pt/touch-icon-192.png">
+
+    <!-- inject:css -->
+    <!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="/public/css/ie8.css"/><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="/public/css/ie9.css"/><![endif]-->
+    <!-- endinject -->
+
+    <!-- Modernizr -->
+    <script type="text/javascript" src="https://cdn.ink.sapo.pt/3.1.10/js/modernizr.js"></script>
+    <script type="text/javascript">
+        Modernizr.load({
+            test: Modernizr.flexbox,
+            nope: 'https://cdn.ink.sapo.pt/3.1.10/css/ink-legacy.min.css'
+        });
+    </script>
+
+<link href="/public/css/app.1451b0d91f5c4333b939.css" rel="stylesheet"><link href="/public/css/app.1451b0d91f5c4333b939-blessed1.css" rel="stylesheet"><link href="/public/css/app.1451b0d91f5c4333b939-blessed2.css" rel="stylesheet"></head>
+
+<body>
+    <!--[if lte IE 9 ]>
+        <div class="ink-alert basic" role="alert">
+            <button class="ink-dismiss">&times;</button>
+
+            <h4>O seu browser está desactualizado.</h4>
+            <span>Para ter uma boa experiência de navegação no SAPO Vídeos, Sugerimos que instale uma versão mais recente</span>
+
+            <a href="http://outdatedbrowser.com/en">Atualizar Browser</a>
+        </div>
+      <![endif]-->
+    <div class="bsu-wrapper">
+        <div class="ink-grid">
+            <div id="bsu-placeholder">
+
+            </div>
+        </div>
+    </div>
+    <div ui-view=""></div>
+    <div class="footer display-none" show-on-load>
+        <div class="ink-grid">
+            <div class="column-group">
+                <div class="logos">
+                    <div class="brand align-right"><img src="/assets/images/bottom_sapotempo.png" alt="Sapo Tempo"></div>
+                    <div class="brand ipma align-left"><img src="/assets/images/bottom_ipma.png" alt="Instituto Português do Mar e da Atmosfera"></div>
+                </div>
+                <div class="bottom">
+                    <ul id="bsu-footer-links" class="spo-links"></ul>
+                    <div id="bsu-footer" class="bsu-footer-dark"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://js.sapo.pt/Projects/bsuv3/js/bsuv3.min.js" 
+        data-country="pt" 
+        _data-bg-color="#111" 
+        _data-theme="dark" 
+        id="bsuScript" 
+        data-target="#bsu-placeholder"
+        data-bg-color="#111"
+        data-logout-url="https://tempo.sapo.pt/logout"
+        data-theme="dark"
+        data-social-facebook="https://facebook.com/sapo" 
+        data-social-twitter="https://twitter.com/sapo" 
+        data-social-instagram="https://instagram.com/sapo">
+    </script>
+    <script src="https://js.sapo.pt/Projects/CPU/latest/lazypub.min.js"></script>
+<script src="/public/js/vendor.1451b0d91f5c4333b939.js"></script><script src="/public/js/polyfills.1451b0d91f5c4333b939.js"></script><script src="/public/js/app.1451b0d91f5c4333b939.js"></script></body>
+
+</html>
